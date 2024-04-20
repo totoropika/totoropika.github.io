@@ -1,20 +1,42 @@
+
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<header>Jamaal Hassan - VFX Artist</header>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="home.html">Home</a></li>
-		        	<li><a href="about.html">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
+<html>
+
+<!--head-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+	<title>Jamaal Hassan - VFX Artist</title>
+</head>
+<!--head-->
+
+<body>
+
+<!-- global page banner -->
+  <div class="header">
+    <header>
+      <h1> JAMAAL HASSAN</h1>
+      <p>Visual Effects | Physics</p>
+    </header>
+  </div>
+  <hr id="header_separator"></hr>
+  
+  {% include navigation.html %}
+<!-- global page banner -->
+
 			
-			{{ content }}
+  {{ content }}
+
+
+  <footer>
+    <small>
+      &#169 Site design by Jamaal Hassan using Jekyll
+    </small>
+  </footer>
+
+</body>
+
+</html>
