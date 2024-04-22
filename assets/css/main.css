@@ -123,14 +123,21 @@ h3 {
 
 .video_container {
 /*  border: 1px solid white;*/
-/*  display: flex;
-  box-sizing: content-box;
-  justify-content: center;*/
-  width: fit-content;
-  height: fit-content;
+/*  display: flex;*/
+/*  box-sizing: border-box;*/
+/*  justify-content: center;*/
+  text-align: center;
+  width: 80%;
+/*  height: fit-content;*/
   margin: 20px auto;
-  padding: 0;
+  padding: auto;
 }
+
+/*.video_container iframe {
+  border: 1px solid white; 
+  max-width: 100%;
+  padding: 0;
+}*/
 
 
 .contact_details {
