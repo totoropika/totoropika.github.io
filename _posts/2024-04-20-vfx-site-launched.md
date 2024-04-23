@@ -8,4 +8,4 @@ date: 2024-04-20
 
 ### Until then, I'm excited for future posts!  ###
 
-[portfolio.html]:/portfolio.html
+[portfolio.html]:/portfolio
