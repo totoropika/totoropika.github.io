@@ -1,0 +1,50 @@
+---
+
+layout: default
+
+---
+<section class="helios_breakdown">
+	<h2>Helios Breakdown</h2>
+
+	<p>The overall VFX work for the shot required compositing an actor in front of
+	a blue screen, with the background being replaced by an unreal environment.</p>
+
+	<div class="helios_image">
+		<img alt="Final composit of VFX shot" src="/assets/images/helios_breakdown/helios_final.png">
+		<figcaption>Final Image Composit of Shot</figcaption>
+	</div>
+
+	<h3>Plate Preparation</h3>
+
+	<p>The first process was to essentially remove the markers from the background,
+	 leaving a clean blue screen. This involved essentially utilising a key of the actor and
+	 the tracking data from the matchmove camera</p>
+
+	 <div class="helios_image">
+	 	<img alt="Image of the plate received from camera" src="/assets/images/helios_original.png">
+	 	<figcaption>Plate received from camera</figcaption>
+	 </div>
+
+	 <p>Utilising a 2.5D projection system in Nuke, it is possible to taking a single frame and project a patch of similar colour to the blue screen as close as possible, using grades and gradients to match the respective lighting conditions of the plate.</p>
+
+	 <p>In order to make sure the blue patches only affect the markers, it was important to utilise the key of the actor. It was necessary to rotoscope the areas where the actor directly occluded the tracking markers, due to the difficulty in pulling a key for markers which had significantly less contrast in comparison to the foreground actor.</p>
+	 
+	 <div class="helios_image">
+	 	<img alt="Image of marker removal of plate using projection" src="/assets/images/helios_marker_patch.png">
+	 	<figcaption>Using a 2.5D projection system, it is possible to place, "patches," of blue screen affecting the markers.</figcaption>
+	 </div>
+
+	<p>Due to the movement of the actor, the motion blur as a result means the edges are needed to be rebuilt, due to the semi-transparency of the actor's edges overlapping with the markers.</p>
+
+	<p>The process involves using a keymix and transform to replicate nearby non-occluded edges, whenever these areas of overlap took place. Masking these areas with roto shapes and keyframing the transforms throughout the sequence, it was possible to rebuild the edges taking into account the actor's motions.</p>
+
+	<!--Insert image of edge rebuild here-->
+
+	<p>Once the markers have been removed and the edges successfully restored, in order to pull a substantial key for the actor to be used for the composit, it is important to even out the patches, effectively resulting in a clean blue screen.</p>
+
+	<p>The method largely required pulling a key of the actor and getting a reasonable clean plate using IBK. From that it is then possible to take the difference in rgb values of the plate and the plate preparation, which can then be added back onto the blue screen areas (the alpha of the actor is used to ensure that only the blue screen is affected).</p>
+
+	<!--Insert images of subtraction images, alpha (possibly?) and final prepared plate-->
+
+	<h3>Keying and Compositing</h3>
+</section>

@@ -105,6 +105,12 @@ section {
   font-family: helvetica;
 }
 
+.helios_breakdown p{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
 
 h2 {
   font-size: 40px;
@@ -187,6 +193,53 @@ em {
   text-align: center;
 }
 
+
+.portfolio_gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.portfolio_gallery img {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: black 5px 5px 20px 2px;
+}
+
+.portfolio_gallery::after {
+  content: "";
+  width: 350px;
+}
+
+.portfolio_image_heading h3{
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  letter-spacing: 5px;
+}
+
+.portfolio_thumbnail {
+  margin-bottom: 50px;
+}
+
+
+.helios_image img{
+  width:  70%;
+  height: 70%;
+}
+
+.helios_image {
+  margin: 50px auto;
+}
 
 footer {
   font-family: Open Sans;
