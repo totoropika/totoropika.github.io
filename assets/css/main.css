@@ -308,6 +308,34 @@ figcaption {
 
 /*----------------------------*/
 
+
+/*-------Helio Portfolio-------*/
+
+
+.spaceplug_breakdown p{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+
+.spaceplug_image img{
+  width:  70%;
+  height: 70%;
+}
+
+.spaceplug_image {
+  margin: 50px auto;
+  margin-bottom: 50px;
+}
+
+
+/*----------------------------*/
+
+
+
+
+
 footer {
   font-family: Open Sans;
   letter-spacing: 2px;
