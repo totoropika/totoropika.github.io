@@ -285,7 +285,7 @@ figcaption {
 
 
 
-/*-------Helio Portfolio-------*/
+/*-------Helios Portfolio-------*/
 
 
 .helios_breakdown p{
@@ -307,6 +307,58 @@ figcaption {
 
 
 /*----------------------------*/
+
+
+/*-------Spaceplug Portfolio-------*/
+
+
+.spaceplug_breakdown p{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+
+.spaceplug_image img{
+  width:  70%;
+  height: 70%;
+}
+
+.spaceplug_image {
+  margin: 50px auto;
+  margin-bottom: 50px;
+}
+
+
+/*----------------------------*/
+
+
+
+
+/*-------Alien Portfolio-------*/
+
+
+.alien_breakdown p{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+
+.alien_image img{
+  width:  70%;
+  height: 70%;
+}
+
+.alien_image {
+  margin: 50px auto;
+  margin-bottom: 50px;
+}
+
+
+/*----------------------------*/
+
+
 
 footer {
   font-family: Open Sans;
